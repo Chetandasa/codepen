@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  filter: blur(0.3vmax) contrast(2);
+}
+#contents {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+h1 {
+  position: fixed;
+  top: 45svh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Concert One", sans-serif;
+  font-size: 7vw;
+}

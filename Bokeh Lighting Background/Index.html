@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="contents">
+    <h1>Bokeh Lighting Background</h1>
+  </div>
+  
+  <script type="x-shader/x-vertex" id="vertexshader">
+    attribute float size;
+        varying vec3 vColor;
+        void main() {
+          vColor = color;
+          vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+          gl_PointSize = size * ( 300.0 / -mvPosition.z );
+          gl_Position = projectionMatrix * mvPosition;
+        }
+      </script>
+  
+  <script type="x-shader/x-fragment" id="fragmentshader">
+    uniform sampler2D pointTexture;
+        varying vec3 vColor;
+        void main() {
+          gl_FragColor = vec4( vColor, 1.0 );
+          gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+        }
+      </script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
