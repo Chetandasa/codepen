@@ -1,0 +1,26 @@
+pre {
+	font-size:3.2vw;
+}
+
+.code {
+	width:80%;
+	user-select:all;
+}
+
+pre {
+	
+	box-shadow:6px 6px 16px 6px rgb(0, 0, 0, 0.5);
+}
+
+body {
+	user-select:none;
+	margin:0;
+	cursor:pointer;
+	width: 100vw;
+  height: 90vh;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:#1d1d1d;
+}
