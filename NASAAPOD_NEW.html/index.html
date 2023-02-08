@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- link to icon -->
+  <link rel="icon" href="https://blogs.nasa.gov/icon/wp-content/themes/2016nasablogs/images/nasa-logo.svg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- font -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA APOD NEW</title>
+  <style>
+    div {
+      background-color: black;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container-fluid text-center text-white">
+    <h1>NASA APOD</h1>
+
+    <button type="button" class="btn btn-outline-primary" onclick="loadNASAData()">
+      Click Me. (Uses XHR) NOW!!!
+    </button>
+
+    <button type="button" class="btn btn-outline-primary" onclick="Reset()">
+      Reset
+    </button>
+    <br>
+    <br>
+  </div>
+  <div class="container-fluid text-center text-white">
+    <div>
+      <h2 id="title">Title will come here</h2>
+      <img src="https://media.istockphoto.com/id/618066222/photo/camera-capturing-a-forest.jpg?s=612x612&w=0&k=20&c=Mqr3fFI2QPY09_bu3GyRYJvcdwBO2qeHPT88GFsLTS4=" class="img-fluid" alt="img" id="image">
+      <h2 id="date"> date will come</h2>
+      <p id="explanation"> explanation will come </p>
+    </div>
+
+  
+
+    <h2>Follow me <a href="https://github.com/Chetandasa">GitHub</a></h2>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
